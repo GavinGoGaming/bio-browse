@@ -6,8 +6,6 @@ ACCESS_TOKEN="" # Leave blank for login prompt
 
 # --------------------------
 
-echo $(fly auth whoami)
-
 # smooshed together by @gavingogaming
 if [ ! -d "$HOME/.fly" ]; then
     sudo curl "$INSTALL_FLY" | sh
@@ -16,6 +14,13 @@ if [ ! -d "$HOME/.fly" ]; then
         fly auth login
     fi
 fi
+
+if [[ $PATH == *".fly/bin"* ]]; then
+    echo "Fly in path, will not export"
+else
+    export PATH="$HOME/.fly/bin:$PATH"
+fi
+
 if [ "$ACCESS_TOKEN" == "" ]; then
     fly deploy
 else
