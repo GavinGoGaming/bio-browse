@@ -12,7 +12,7 @@ body {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #333;
+  background-color: #2d2d2d;
   color: #eee;
   cursor: pointer;
   padding: 18px;
@@ -21,6 +21,17 @@ body {
   border: none;
   outline: none;
   transition: 0.4s;
+}
+.accordion.appac {
+  border-radius: 8px;
+}
+.accordion:not(.appac):last-of-type {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.accordion:not(.appac):first-of-type {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -51,16 +62,14 @@ body {
   border: 1px solid black;
 }
 .parent {
-  box-sizing: border-box;
   width: 80vw;
+  display: flex;
+  justify-content: center;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
+  width: 33.3%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 .panel {
   color: white;

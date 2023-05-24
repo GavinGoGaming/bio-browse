@@ -11,6 +11,11 @@ window.aag = {
             "image": "/images/google.webp"
         },
         {
+            "name": "DuckDuckGo",
+            "url": "https://duckduckgo.com",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdAqp5iMfjEb4q1MNHDrYfQQKoTLstMjPnDYd3U-vJ7A&usqp=CAU&ec=48665701"
+        },
+        {
             "name": "Replit",
             "url": "https://replit.com",
             "image": "/images/replit.webp"
@@ -55,132 +60,176 @@ window.aag = {
         {
             "name": "Snake",
             "url": "https://www.google.com/fbx?fbx=snake_arcade",
-            "image": "/images/snake.jpeg"
+            "image": "/images/snake.jpeg",
+            "category": ["casual"]
         },
         {
             "name": "WorldsHardestGame",
             "url": "https://fox.klash.dev/main/games/worldshardestgame/",
-            "image": "https://m.media-amazon.com/images/I/41EYwPqe0RL.png"
+            "image": "https://m.media-amazon.com/images/I/41EYwPqe0RL.png",
+            "category": ["mobile"]
         },
         {
             "name": "Kalkel",
             "url": "https://kalkel.fly.dev",
-            "image": "https://kalkel.fly.dev/kalkel/kalkel.png"
+            "image": "https://kalkel.fly.dev/kalkel/kalkel.png",
+            "category": ["idle"]
+        },
+        {
+            "name": "Papa's Sushiria",
+            "url": "https://papas-games.io/papas-sushiria.embed",
+            "image": "https://kizicdn.com/system/static/thumbs/big_tile_thumb/1747/thumb300_psushi300.jpg?155620307",
+            "category": ["papas"]
+        },
+        {
+            "name": "Papa's Burgeria",
+            "url": "https://www.coolmathgames.com/0-papas-burgeria/play",
+            "image": "https://img3.ugamezone.com/201901/2019/1129/87/3/673256/original.jpg",
+            "category": ["papas"]
         },
         {
             "name": "2048",
             "url": "https://2048.io",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2048_logo.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2048_logo.png",
+            "category": ["casual"]
         },
         {
             "name": "Subway",
             "url": "https://fox.klash.dev/main/games/subway",
-            "image": "https://static.wikia.nocookie.net/subwaysurf/images/4/4b/FirstAvatar.jpg"
+            "image": "https://static.wikia.nocookie.net/subwaysurf/images/4/4b/FirstAvatar.jpg",
+            "category": ["mobile"]
+        },
+        {
+            "name": "BTD5 (BETA. UAYOR)",
+            "url": "-/games/bloons",
+            "image": "https://assets1.ignimgs.com/2017/05/05/bloons-td-5-1494021512734.jpg",
+            "category": ["EXPERIMENTAL"]
+        },
+        {
+            "name": "BTD4 (HD Beta)",
+            "url": "https://kdata1.com/2020/02/bloonstowerdefense44/",
+            "image": "https://gamefaqs.gamespot.com/a/box/0/7/0/174070_front.jpg",
+            "category": ["mobile", "EXPERIMENTAL"]
         },
         {
             "name": "Basketball Stars",
             "url": "https://fox.klash.dev/main/games/basketballstars/",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcFeSIe-ziYTHb8YRA6_Kkag2lNhUAwVEoelqGTgV6vA&usqp=CAU&ec=48665701"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcFeSIe-ziYTHb8YRA6_Kkag2lNhUAwVEoelqGTgV6vA&usqp=CAU&ec=48665701",
+            "category": ["sport"]
         },
         {
             "name": "Slope",
             "url": "https://fox.klash.dev/main/games/slope/",
-            "image": "https://play-lh.googleusercontent.com/uJn2i9h7KxYQarC_c3K4qH6o7gLtflFnhD_dN14MNkzHJ1NeNFzCL69jpB5mT0vCoQs"
-        },
-        {
-            "name": "Bloons TD 4",
-            "url": "https://fox.klash.dev/main/games/btd4/",
-            "image": "https://gamefaqs.gamespot.com/a/box/0/7/0/174070_front.jpg"
+            "image": "https://play-lh.googleusercontent.com/uJn2i9h7KxYQarC_c3K4qH6o7gLtflFnhD_dN14MNkzHJ1NeNFzCL69jpB5mT0vCoQs",
+            "category": ["fast-Paced"]
         },
         {
             "name": "Super Mario 64",
             "url": "https://ultimatemen.github.io/superm64/",
-            "image": "https://m.media-amazon.com/images/I/51jDb01XCXL._AC_UF1000,1000_QL80_.jpg"
+            "image": "https://m.media-amazon.com/images/I/51jDb01XCXL._AC_UF1000,1000_QL80_.jpg",
+            "category": ["general"]
         },
         {
             "name": "2048+AI",
             "url": "https://aj-r.github.io/2048-AI/",
-            "image": "https://aj-r.github.io/2048-AI/favicon.ico"
+            "image": "https://aj-r.github.io/2048-AI/favicon.ico",
+            "category": ["casual"]
         },
         {
             "name": "BitLife",
             "url": "https://fox.klash.dev/main/games/bitlife",
-            "image": "https://play-lh.googleusercontent.com/fUM-UyywXxjC8soxAZdIlxJrlRRXmql8wkE426SHzft4lJycSKVd2jCYQQX1BEG9Xw"
+            "image": "https://play-lh.googleusercontent.com/fUM-UyywXxjC8soxAZdIlxJrlRRXmql8wkE426SHzft4lJycSKVd2jCYQQX1BEG9Xw",
+            "category": ["mobile"]
         },
         {
             "name": "Snow Rider 3D",
             "url": "/images/srtd.png",
-            "image": "https://unity.games235.com/snow-rider-3d-unblocked.html"
+            "image": "https://unity.games235.com/snow-rider-3d-unblocked.html",
+            "category": ["fast-Paced"]
         },
         {
             "name": "OvO",
             "url": "https://dedragames.com/games/ovo/1.4.4/",
-            "image": "/images/ovo.png"
+            "image": "/images/ovo.png",
+            "category": ["fast-Paced"]
         },
         {
             "name": "Shell Shockers",
             "url": "https://shellshock.io",
-            "image": "/images/shellshock.webp"
+            "image": "/images/shellshock.webp",
+            "category": ["general"]
         },
         {
             "name": "Cookieclicker",
             "url": "https://pages.klash.dev/cookies.io",
-            "image": "/images/goldCookie.png"
+            "image": "/images/goldCookie.png",
+            "category": ["idle"]
         },
         {
             "name": "Stumble Guys",
             "url": "https://www.stumbleguys.com/play",
-            "image": "https://play-lh.googleusercontent.com/WIxz11upokgjG0ktYCTM7XmWOF7w8sIfcHBfcyFdYU1Qy_rucdjpRlZ6aS3dy3-8Jg"
+            "image": "https://play-lh.googleusercontent.com/WIxz11upokgjG0ktYCTM7XmWOF7w8sIfcHBfcyFdYU1Qy_rucdjpRlZ6aS3dy3-8Jg",
+            "category": ["general"]
         },
         {
             "name": "Funny Shooter 2",
             "url": "https://html5.gamedistribution.com/a1b7ac4025214a5cb0bd01a4f675513a/index.html",
-            "image": "/images/fs2.jpeg"
+            "image": "/images/fs2.jpeg",
+            "category": ["general"]
         },
         {
             "name": "Friday Night Funkin",
             "url": "https://fox.klash.dev/main/games/fridaynightfunkin/",
-            "image": "https://static.wikia.nocookie.net/fridaynightfunkin/images/7/70/FNF_Logo_ba-bumps.gif/revision/latest/"
+            "image": "https://static.wikia.nocookie.net/fridaynightfunkin/images/7/70/FNF_Logo_ba-bumps.gif/revision/latest/",
+            "category": ["general"]
         },
         {
             "name": "FNAF 4",
             "url": "https://fox.klash.dev/main/games/fnaf4/",
-            "image": "https://static.wikia.nocookie.net/logopedia/images/3/32/FNAF4.png/revision/latest/"
+            "image": "https://static.wikia.nocookie.net/logopedia/images/3/32/FNAF4.png/revision/latest/",
+            "category": ["horror"]
         },
         {
             "name": "FNAF 1",
             "url": "https://fox.klash.dev/main/games/fnaf1/",
-            "image": "https://toppng.com/uploads/preview/five-nights-at-freddys-five-nights-at-freddy-logo-11563053466qyhnutsgsm.png"
+            "image": "https://toppng.com/uploads/preview/five-nights-at-freddys-five-nights-at-freddy-logo-11563053466qyhnutsgsm.png",
+            "category": ["horror"]
         },
         {
             "name": "Temple Run 2",
             "url": "https://fox.klash.dev/main/games/templerun2/",
-            "image": "https://i.pinimg.com/originals/07/ef/10/07ef10c982b089babd27eb19228264e5.jpg"
+            "image": "https://i.pinimg.com/originals/07/ef/10/07ef10c982b089babd27eb19228264e5.jpg",
+            "category": ["mobile"]
         },
         {
             "name": "Tetris",
             "url": "https://fox.klash.dev/main/games/tetris/",
-            "image": "https://static-s.aa-cdn.net/img/gp/20600011607595/4ateqg1CTf49cReiODJw2zFGmcJ1lW254Z8uDdJSxrdjj3YWtv9a5lAypQ-qdBMykgD_?v=1"
+            "image": "https://static-s.aa-cdn.net/img/gp/20600011607595/4ateqg1CTf49cReiODJw2zFGmcJ1lW254Z8uDdJSxrdjj3YWtv9a5lAypQ-qdBMykgD_?v=1",
+            "category": ["casual"]
         },
         {
             "name": "Monkey Mart",
             "url": "https://fox.klash.dev/main/games/monkeymart",
-            "image": "https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/b3668d7deb043d0f43b5813b0365be8f.png"
+            "image": "https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/b3668d7deb043d0f43b5813b0365be8f.png",
+            "category": ["casual"]
         },
         {
             "name": "Crossy Road",
             "url": "https://fox.klash.dev/main/games/crossyroad",
-            "image": "https://play-lh.googleusercontent.com/2yH_JCxn7D9FttXZViPhmvIEDfRhio5qdLdWJLxcIfh8PjIkVeBgt_Gj7q21dIRp97g"
+            "image": "https://play-lh.googleusercontent.com/2yH_JCxn7D9FttXZViPhmvIEDfRhio5qdLdWJLxcIfh8PjIkVeBgt_Gj7q21dIRp97g",
+            "category": ["mobile"]
         },
         {
             "name": "Portal 2d",
             "url": "https://fox.klash.dev/main/games/portal2d/",
-            "image": "https://www.gamenora.com/upload/games/thumbnails/Portal%202D.webp"
+            "image": "https://www.gamenora.com/upload/games/thumbnails/Portal%202D.webp",
+            "category": ["general"]
         },
         {
             "name": "Binding of Isaac",
             "url": "https://fox.klash.dev/main/games/bindingofissac/",
-            "image": "https://m.media-amazon.com/images/M/MV5BMmE5MDRmYTAtNzkxMS00ODllLTlhMjEtOTMwYTg1NWNhZWY1XkEyXkFqcGdeQXVyMTg2NzgzMDE@._V1_FMjpg_UX1000_.jpg"
+            "image": "https://m.media-amazon.com/images/M/MV5BMmE5MDRmYTAtNzkxMS00ODllLTlhMjEtOTMwYTg1NWNhZWY1XkEyXkFqcGdeQXVyMTg2NzgzMDE@._V1_FMjpg_UX1000_.jpg",
+            "category": ["casual"]
         }
     ]
 }

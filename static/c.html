@@ -26,28 +26,37 @@
 	<body id="body" style="background-color: rgb(50, 54, 57);width:100vw;height:90vh;">
 		<div class="center">
 			<h2 id="headtxt">Shortcuts</h2>
+			<h4 style="color:white;">Blocked? Use <code>proxy.mediaology.com</code>, <code>proxy.fishme.me</code>, or <code>bio-browse.fly.dev</code></h4>
+			<h4 style="color:white;">DO THIS ON PC CHROME: Click the three dots in the REAL GOOGLE > More Tools > Create Shortcut > Open As Window > Create. Pin to shelf and your done!</h4>
 			<div class="parent">
-				<div class="column">
-					<button class="accordion">Games</button>
-					<div class="panel games">
-					</div>
+				<div class="column games">
+					
 				</div>
 
 				<div class="column">
-					<button class="accordion">Apps</button>
+					<button class="accordion appac">Apps</button>
 					<div class="panel apps">
 					</div>
 				</div>
 			</div>
 			<script src="games.js"></script>
 			<script>
-				// forEachApp(app => {
+				function Insertclick(div, url) {
+					if(url.startsWith("-/")) {
+						div.addEventListener('click', ()=>{
+							location.href=url.substring(1);
+						});
+					}else {
+						div.addEventListener('click', ()=>{
+							location.href=__uv$config.prefix+xor.encode(url);
+						});
+					}
+				}
+
 				for(var app of window.aag.games) {
 					var div = document.createElement('div');
 					div.className = 'shortcut';
-					div.addEventListener('click', ()=>{
-						location.href=__uv$config.prefix+xor.encode(app.url);
-					});
+					Insertclick(div, app.url);
 					
 					var b = document.createElement('b');
 					b.textContent = app.name;
@@ -58,14 +67,22 @@
 					div.appendChild(b);
 					div.appendChild(img);
 
-					document.querySelector('.games').appendChild(div);
+					for(var ctg of app.category) {
+						try {
+							(document.querySelector('.'+ctg)).prop;
+							document.querySelector('.'+ctg).appendChild(div);
+						}catch(exi){
+							document.querySelector('.games').insertAdjacentHTML("beforeend", `<button class="accordion">${ctg.charAt(0).toUpperCase() + ctg.slice(1)} Games</button>
+					<div class="panel ${ctg}">
+					</div>`);
+							document.querySelector('.'+ctg).appendChild(div);
+						}
+					}
 				}
 				for(var app of window.aag.apps) {
 					var div = document.createElement('div');
 					div.className = 'shortcut';
-					div.addEventListener('click', ()=>{
-						location.href=__uv$config.prefix+xor.encode(app.url);
-					});
+					Insertclick(div, app.url);
 					
 					var b = document.createElement('b');
 					b.textContent = app.name;

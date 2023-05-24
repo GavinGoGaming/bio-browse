@@ -16,6 +16,7 @@
                                                __/ |                                                                    
                                               |___/                                                                     
 */
+async function r() {
 
 console.log(`NotGoogle
 This program is free software: you can redistribute it and/or modify
@@ -559,3 +560,5 @@ let addEl = (a, b, c) =>
 	Object.assign(b.appendChild(document.createElement(a)), c);
 
 newTab('ht://newtab');
+}
+r();

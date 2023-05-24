@@ -4,7 +4,8 @@
   "description": "Unofficial Hypertabs easy deployment version with TompHTTP bare server included.",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "ship": "bash shipit.bash"
   },
   "files": [
     "static",
