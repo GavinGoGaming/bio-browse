@@ -6,6 +6,11 @@ window.aag = {
             "image": "/images/tiktok.webp"
         },
         {
+            "name": "ChatGPT",
+            "url": "-/games/chatgpt",
+            "image": "/images/chatgpt.png"
+        },
+        {
             "name": "Google",
             "url": "https://google.com",
             "image": "/images/google.webp"
@@ -74,6 +79,12 @@ window.aag = {
             "url": "https://kalkel.fly.dev",
             "image": "https://kalkel.fly.dev/kalkel/kalkel.png",
             "category": ["idle"]
+        },
+        {
+            "name": "GeoFS",
+            "url": "https://geofs.com/geofs.php",
+            "image": "https://www.geo-fs.com/images/knowledge-panel.jpg",
+            "category": ["general", "casual"]
         },
         {
             "name": "Papa's Sushiria",

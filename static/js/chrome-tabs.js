@@ -86,7 +86,7 @@
 
       this.hypertabContainer.addEventListener("dblclick", (event) => {
         if ([this.hypertabContainer, this.tabContentEl].includes(event.target))
-          newTab("ht://newtab");
+          newTab("ng://newtab");
       });
 
       this.tabEls.forEach((tabEl) => this.setTabCloseEventListener(tabEl));

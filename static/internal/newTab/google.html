@@ -39,13 +39,13 @@
 		</div>
 
 		<div class="center">
-			<img src="/notGoogle.png" width="335" height="auto">
+			<img src="./googleFull.png" width="335" height="auto">
 			<forum
 				id="input"
 				onkeydown="if(event.key == 'Enter'){location.href=`${__uv$config.prefix}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`}"
 				onsubmit="location.href=`${__uv$config.prefix}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`"
 			>
-				<input id="inputb" placeholder="Search....." />
+				<input id="inputb" placeholder="Surf the Internet" />
 				<input
 					id="inputimg"
 					onclick="location.href=`${__uv$config.prefix}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`"
@@ -58,12 +58,11 @@
 				<input type="submit" style="display: none" />
 			</forum>
 			<div class="btns">
-				<div onclick="location.href='/c.html'" class="crm">
-					<img class="icn" src="/icon.png" />
-					<a class="btn">Apps & Games</a>
+				<div onclick="location.href='nt://newtab'" class="crm">
+					<img class="icn" src="/images/google.webp" />
+					<a class="btn">Google</a>
 				</div>
 			</div><br>
-			<a style="color:white;"><a href="/others.html" style="color: white !important;">Creators</a></a>
 		</div>
 	</body>
 </html>

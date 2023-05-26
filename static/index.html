@@ -70,7 +70,7 @@
     <div class='mock-browser'>
       <div id="ctx" class="dropdown-content" style="top:0px;left:0px;right:auto;z-index:99">
         <a class="pointer" id="pin" onclick="toggleId('ctx');chromeTabs.pinTab(ctxTab)">Pin tab</a> 
-        <a class="pointer" style="margin-left: 0px;"onclick="toggleId('ctx');newTab('ht://newtab')">New tab</a>
+        <a class="pointer" style="margin-left: 0px;"onclick="toggleId('ctx');newTab('ng://newtab')">New tab</a>
         <a class="pointer"
           onclick="toggleId('ctx');newTab(document.getElementById(parseInt(ctxTab) + 1).contentWindow.location.href,false);">Duplicate</a>
           <a class="pointer"
@@ -99,7 +99,7 @@
         </style>
       </div>
       <button style='margin-left:0px;' class='material-icons chrome-tab' data-add-tab id='createTab'
-        onclick='newTab("ht://newtab")'>add</button>
+        onclick='newTab("ng://newtab")'>add</button>
       <div class='mock-browser-content'>
         <button id='urlbutton'
           onclick='document.getElementById(getActiveFrameId()).src = getBack(getActiveFrameId())'><svg
@@ -143,6 +143,8 @@
             </g>
           </svg> <button id='options'
             onclick='openMenu("optionsdrop", "themedrop", "extensiondrop", "uadrop", "customtheme");'>&#x22ee;</button>
+            <button id='panic'
+            onclick='newTab("ng://google_newtab");var elem=document.body;if (elem.requestFullscreen) { elem.requestFullscreen(); } else if (elem.webkitRequestFullscreen) { elem.webkitRequestFullscreen(); }'>&#10071;</button>
       </div>
       <!-- todo, javascript based dropdown menu  -->
       <div id='optionsdrop' class='dropdown-content'>
@@ -196,8 +198,8 @@
       <div id="extensiondrop" class='dropdown-content'>
         <a class="pointer tooldivd" onclick='toggleId("extensiondrop", "optionsdrop")'>back</a>
         <div class="dividerext"></div>
-        <a class="pointer" onclick="newTab('ht://extensions')">Manage extensions</a>
-        <a class="pointer" onclick="newTab('ht://extensionsmarketplace')">Get extensions</a>
+        <a class="pointer" onclick="newTab('ng://extensions')">Manage extensions</a>
+        <a class="pointer" onclick="newTab('ng://extensionsmarketplace')">Get extensions</a>
       </div>
     </div>
     <script src='js/xor.js'></script>

@@ -16,8 +16,6 @@
                                                __/ |                                                                    
                                               |___/                                                                     
 */
-async function r() {
-
 console.log(`NotGoogle
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -45,8 +43,8 @@ const ACTIVE_DOCUMENT = () => {
 let history = {},
 	sir = true;
 
-const htHandler = (url) => {
-	// handle URLs accessed through the `ht://` "protocol"
+const ngHandler = (url) => {
+	// handle URLs accessed through the `ng://` "protocol"
 	url = url.slice(5);
 	return (
 		internal_pages[url] ||
@@ -84,7 +82,7 @@ function addPageToHistory(id, page) {
 }
 function getPage(id) {
 	return (
-		((history[id] || [])[0] || [])[history[id][1]] || htHandler('ht://newtab')
+		((history[id] || [])[0] || [])[history[id][1]] || ngHandler('ng://newtab')
 	);
 }
 function getBack(id) {
@@ -297,8 +295,8 @@ let newTab = (url, uxor = true) => {
 	let frameId = tabNum++;
 	let frame = document.createElement('IFRAME');
 
-	if (url.startsWith('ht://')) {
-		frame.setAttribute('src', htHandler(url));
+	if (url.startsWith('ng://')) {
+		frame.setAttribute('src', ngHandler(url));
 	} else if (uxor == false) {
 		frame.setAttribute('src', url);
 	} else {
@@ -357,7 +355,7 @@ document.querySelector('#urlbar').addEventListener('keydown', (event) => {
 		ACTIVE_WINDOW().eval(jsUri);
 		if (
 			!ACTIVE_DOCUMENT().baseURI.endsWith(
-				location.host + '/internal/newTab/main.php'
+				location.host + '/internal/newTab/main.html'
 			)
 		) {
 			URL_BAR.value = ACTIVE_DOCUMENT().baseURI;
@@ -366,8 +364,8 @@ document.querySelector('#urlbar').addEventListener('keydown', (event) => {
 		}
 		return;
 	}
-	if (URL_BAR.value.startsWith('ht://')) {
-		value = htHandler(URL_BAR.value);
+	if (URL_BAR.value.startsWith('ng://')) {
+		value = ngHandler(URL_BAR.value);
 		document.getElementById(getActiveFrameId()).src = value;
 		return;
 	}
@@ -559,6 +557,4 @@ if (localStorage.getItem('ctPins')) {
 let addEl = (a, b, c) =>
 	Object.assign(b.appendChild(document.createElement(a)), c);
 
-newTab('ht://newtab');
-}
-r();
+newTab('ng://newtab');

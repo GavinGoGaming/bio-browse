@@ -210,7 +210,7 @@ button:active {
   }
 }
 
-#options {
+#options, #panic {
   float: right;
   outline: none;
   border: 0;
