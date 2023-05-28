@@ -1,6 +1,16 @@
 <!-- Notice for idiots -->
-# to run it
-i reccomend using fly.io, just load this shi up in a codespace (or gitpod.io) and do `curl https://fly.io/install.sh | sh` to install, `$HOME/.fly/bin/fly auth signup` to signup and `$HOME/.fly/bin/fly launch` to launch it
+# RUNNING
+Throw that shi into a codespace (or gitpod.io if you have no more codespace compute) and run `bash shipit.bash`. Wait for it to download Fly.io and when it prompts a link, ctrl-click it and login with github. It will deploy an app on your new fly account and it will be avalible at `appname`.fly.dev!
+
+# PRE-ONLINE LINKS
+| Name & Hyperlink | Provider | Location Running |
+| --- | --- | --- |
+| [Mediaology Link](https://proxy.mediaology.com) | FoxMoss, owner of fishme | Main Server (LAX) |
+| [Fishme.me Link](https://proxy.fishme.me) | FoxMoss, owner of fishme | Main Server (LAX) |
+| [Foxmoss Link](https://proxy.foxmoss.com) | FoxMoss, owner of fishme | Main Server (LAX) |
+| [Klash Link](https://i.like.fish.klash.dev) | Gavin (Klash.dev) | Main Server (LAX) |
+| [DontFeedMyMonkey](https://dont.feedmymonkey.com) | FREEDNS (BACKUP URL) | **Side Server** - No guarentee |
+| [TOPGMinecraft](https://topg.minecraft.pe) | FREEDNS (BACKUP URL) | **Side Server** - No guarentee |
 
 <div align="center">
          
