@@ -9,6 +9,7 @@ Throw that shi into a codespace (or gitpod.io if you have no more codespace comp
 | [Fishme.me Link](https://proxy.fishme.me) | FoxMoss, owner of fishme | Main Server (LAX) |
 | [Foxmoss Link](https://proxy.foxmoss.com) | FoxMoss, owner of fishme | Main Server (LAX) |
 | [Klash Link](https://i.like.fish.klash.dev) | Gavin (Klash.dev) | Main Server (LAX) |
+| [Direct Link](https://bio-browse.fly.dev) | Gavin (Klash.dev) | Main Server (LAX) |
 | [DontFeedMyMonkey](https://dont.feedmymonkey.com) | FREEDNS (BACKUP URL) | **Side Server** - No guarentee |
 | [TOPGMinecraft](https://topg.minecraft.pe) | FREEDNS (BACKUP URL) | **Side Server** - No guarentee |
 
