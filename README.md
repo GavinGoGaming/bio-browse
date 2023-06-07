@@ -1,3 +1,4 @@
+
 <!-- Notice for idiots -->
 ## RUNNING
 Throw that shi into a codespace (or gitpod.io if you have no more codespace compute) and run `bash shipit.bash`. Wait for it to download Fly.io and when it prompts a link, ctrl-click it and login with github. You need to verify a payment method, but it doesnt cost ANYTHING. When it asks to copy the configuration **SAY YES**. It will deploy an app on your new fly account and it will be avalible at `APPNAME.fly.dev` (with the appname replaced with the generated one)!

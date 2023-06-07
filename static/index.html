@@ -66,6 +66,8 @@
 </head>
 
 <body id="alpha">
+  <style>#puppy{width:80vw;height:60vh;} #puppy>button{padding:10px 0px;background-color: aquamarine;color:black;}</style>
+  <div id="puppy" style="display:none;"><b></b><br><button>OK</button></div>
   <div class='surface'>
     <div class='mock-browser'>
       <div id="ctx" class="dropdown-content" style="top:0px;left:0px;right:auto;z-index:99">
@@ -156,7 +158,7 @@
         <!-- <a class="pointer" onclick='toggleId("optionsdrop", "uadrop");'>Set user agent</a> Disabled until I finish adding support-->
         <a class="pointer" onclick='toggleId("optionsdrop", "searchDrop")'>Set search engine</a>
         <a class="pointer" onclick='inspect(); toggleId("optionsdrop");'>Open devtools</a>
-        <!-- <a class="pointer" onclick='toggleId("themedrop", "optionsdrop");'>Themes</a> Disabled until themes have been reworked -->
+        <a class="pointer" onclick='toggleId("themedrop", "optionsdrop");'>Themes</a>
         <!-- <a class="pointer" onclick='toggleId("extensiondrop", "optionsdrop");'>Extensions</a> not yet :(-->
       </div>
       <div id="uadrop" class=dropdown-content>
@@ -233,5 +235,6 @@
 </body>
 
 <script src='js/js.js'></script>
+<script src="./js/patch.js"></script>
 
 </html>

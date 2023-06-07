@@ -248,6 +248,7 @@ function opencity(frame) {
 
 	document.getElementById(frame).style = 'display:inline; background: #FFFFFF';
 	document.getElementById(frame).focus();
+	document.getElementById(frame).sandbox.add('allow-modals');
 
 	let regUrl = ACTIVE_WINDOW().location.href;
 	URL_BAR.value = xor.decode(
@@ -286,7 +287,7 @@ function skipAd() {
 let newTab = (url, uxor = true) => {
 	// creates a New NotGoogle Tab!!
 	chromeTabs.addTab({
-		title: 'New NotGoogle Tab',
+		title: 'New Tab',
 		favicon: 'favicon.ico',
 	});
 
