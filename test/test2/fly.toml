@@ -1,0 +1,7 @@
+# fly.toml app configuration file generated for solitary-wind-9049 on 2023-05-31T16:29:36Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "solitary-wind-9049"
+primary_region = "lax"
